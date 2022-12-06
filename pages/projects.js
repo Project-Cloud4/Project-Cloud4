@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar.js";
 
 function Card({ project }) {
   return (
-    <div>
+    <>
       <div className="card card-compact w-96 bg-base-100 shadow-2xl border-primary border-2">
         <figure className="m-4 rounded-lg">
           <img src={project.image} />
@@ -22,7 +22,7 @@ function Card({ project }) {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

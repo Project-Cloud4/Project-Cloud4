@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function Navbar() {
-  const Links = [
+  const links = [
     {
       linkname: "Our projects",
       linkref: "/projects",
@@ -27,7 +27,7 @@ export default function Navbar() {
       </div>
       <div>
         <ul className="menu menu-horizontal  ">
-          {Links.map((link) => {
+          {links.map((link) => {
             return (
               <li key={link.linkname}>
                 <Link href={link.linkref}>

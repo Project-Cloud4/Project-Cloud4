@@ -43,7 +43,7 @@ function Footer() {
 
 function Member({ member }) {
   return (
-    <div>
+    <>
       <span className="footer-title">{member.username}</span>
       <a href={member.iglink} className="link link-hover">
         Instagram: {member.ig}
@@ -52,7 +52,7 @@ function Member({ member }) {
         Phone number : {member.phone}
       </a>
       <a className="link link-hover">Email: {member.mail} </a>
-    </div>
+    </>
   );
 }
 
