@@ -46,12 +46,12 @@ function Member({ member }) {
     <div>
       <span className="footer-title">{member.username}</span>
       <a href={member.iglink} className="link link-hover">
-        Instagram: {member.ig} ;
+        Instagram: {member.ig}
       </a>
       <a href={"tel:+4" + member.phone} className="link link-hover">
         Phone number : {member.phone}
       </a>
-      <a className="link link-hover">Email: {member.mail} ;</a>
+      <a className="link link-hover">Email: {member.mail} </a>
     </div>
   );
 }
