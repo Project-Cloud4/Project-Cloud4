@@ -1,13 +1,12 @@
-import * as React from "react";
 import Two from "two.js";
-import { useEffect } from "react";
+import { useEffect, createRef } from "react";
 
 export default function TwoWrapper() {
   let two = new Two({
     autostart: true,
     fullscreen: false,
   });
-  let twoRef = React.createRef();
+  let twoRef = createRef();
   useEffect(() => {
     two.appendTo(twoRef.current);
     two.update();
