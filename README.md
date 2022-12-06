@@ -1,2 +1,3 @@
-# Project-Cloud4
-The group's presentation website
+# Project Cloud4
+
+Project Cloud4 landing page.
