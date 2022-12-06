@@ -50,7 +50,7 @@ const Showcase = () => {
       </div>
       <div className="h-screen flex flex-row justify-center items-center z-1">
         <div className="h-1/2 w-1/2 relative ">
-          <Image fill objectFit="cover" src="/logopc4.png" />
+          <Image fill className="object-cover" src="/logopc4.png" />
         </div>
       </div>
     </div>
