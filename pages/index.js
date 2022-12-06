@@ -4,7 +4,7 @@ const TwoWrapper = dynamic(() => import("../components/two_thingy/twowrap"), {
   ssr: false,
 });
 import Image from "next/image";
-import Navbar from "../components/NavBar";
+import Navbar from "../components/navbar";
 
 //to do: fix responsivness CRITICAL
 //add nextjs Link wrapper to Contact Button button

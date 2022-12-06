@@ -1,5 +1,5 @@
 import Link from "next/link.js";
-import Navbar from "../components/navbar.js";
+import Navbar from "../components/navbar";
 
 function Card({ project }) {
   return (
