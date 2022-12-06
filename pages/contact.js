@@ -1,7 +1,7 @@
 import Navbar from "../components/NavBar";
 
-function Footer_() {
-  const Members = [
+function Footer() {
+  const members = [
     {
       username: "Murariu Georgiana-Roxana",
       ig: "@georgiamurariu",
@@ -28,13 +28,13 @@ function Footer_() {
       ig: "@tudor_codes",
       iglink: "https://www.instagram.com/tudor_codes/?next=%2F",
       phone: "0751790642",
-      mail: "georgiamurariu@gmail.com",
+      mail: "tudor.zgimbau@gmail.com",
     },
   ];
 
   return (
     <footer className="footer p-10 bg-base-100 text-neutral-content">
-      {Members.map((member) => (
+      {members.map((member) => (
         <Member member={member}></Member>
       ))}
     </footer>
@@ -57,6 +57,21 @@ function Member({ member }) {
 }
 
 function Contact() {
+  const contactInfo = [
+    {
+      title: "Instagram: @project_cloud4",
+      link: "https://www.instagram.com/project_cloud4/",
+    },
+    {
+      title: "Email: tudor.zgimbau@gmail.com",
+      link: "mailto: tudor.zgimbau@gmail.com",
+    },
+    {
+      title: "GitHub: https://github.com/Project-Cloud4",
+      link: "https://github.com/Project-Cloud4",
+    },
+  ];
+
   return (
     <div className="bg-[url('/bg.png')] bg-cover">
       <div className="fixed w-screen z-10">
@@ -69,51 +84,47 @@ function Contact() {
             <a className="text-5xl font-bold font-mono rounded-lg">
               PROJECT CLOUD4
             </a>
-
             <div className="py-6">
               <a className="text-xl font-mono rounded-lg">
                 You can find us on:
               </a>
-
               <ul>
-                <li>
-                  <a
-                    className="text-xl font-mono rounded-lg"
-                    href="https://www.instagram.com/project_cloud4/"
-                    target="blanck"
-                  >
-                    Instagram: @project_cloud4 ;
-                  </a>
-                </li>
-                <li>
-                  <a className="text-xl font-mono rounded-lg">Email:</a>
-                </li>
-                <li>
-                  <a href="tel:" className="text-xl font-mono rounded-lg">
-                    Phone number:
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-xl font-mono rounded-lg"
-                    href="https://github.com/Project-Cloud4"
-                    target="blanck"
-                  >
-                    GitHub: https://github.com/Project-Cloud4
-                  </a>
-                </li>
+                {contactInfo.map((contact) => {
+                  return (
+                    <li key={contact.link}>
+                      <a
+                        className="text-xl font-mono rounded-lg"
+                        href={contact.link}
+                        target="_blank"
+                      >
+                        {contact.title}
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
-            <button
-              className="btn btn-primary"
-              href="C:\Users\GEORGIANA\abrocadabra\src\us.png"
+            <label
+              htmlFor="my-modal-5"
+              className="btn bg-secondary border-secondary"
             >
               US
-            </button>
+            </label>
+            <input type="checkbox" id="my-modal-5" className="modal-toggle" />
+            <div className="modal">
+              <div className="modal-box w-5/12 max-w-5xl bg-gradient-to-br from-base-100 to-accent">
+                <img src="/us.png"></img>
+                <div className="modal-action">
+                  <label htmlFor="my-modal-5" className="btn bg-neutral">
+                    <img className="invert" src="/cloud.svg" />
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <Footer_ />
+      <Footer />
     </div>
   );
 }

@@ -45,12 +45,12 @@ function Projects() {
   ];
 
   return (
-    <div className="h-screen  bg-[url('/bg.png')] bg-cover">
+    <div className="h-screen bg-[url('/bg.png')] bg-cover">
       <div className="fixed mt-0 w-screen">
         <Navbar />
       </div>
-      <div className="h-screen flex flex-col ">
-        <div className="flex flex-col items-center justify-center  flex-initial">
+      <div className="h-screen flex flex-col">
+        <div className="flex flex-col items-center justify-center flex-initial">
           <h1 className="text-7xl font-mono text-accent text-bold mt-32 inline-block">
             OUR PROJECTS
           </h1>
@@ -66,7 +66,7 @@ function Projects() {
               <figure className="m-4">
                 <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
               </figure>
-              <div className="card-body ">
+              <div className="card-body">
                 <h2 className="card-title text-accent text-3xl font-mono">
                   PoliHack!
                 </h2>

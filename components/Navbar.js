@@ -1,6 +1,16 @@
 import Link from "next/link";
 
 export default function Navbar() {
+  const Links = [
+    {
+      linkname: "Our projects",
+      linkref: "/projects",
+    },
+    {
+      linkname: "Contact",
+      linkref: "/contact",
+    },
+  ];
   return (
     <div className="navbar bg-base-100 border-base-200 border-b-2">
       <div className="flex-1">
@@ -10,25 +20,24 @@ export default function Navbar() {
           </div>
         </label>
         <Link href="/">
-          <button className="btn btn-ghost text-xl font-mono ">
+          <button className="btn btn-ghost text-xl font-mono">
             Project Cloud4
           </button>
         </Link>
       </div>
       <div>
         <ul className="menu menu-horizontal  ">
-          <li>
-            <Link href="/projects">
-              <button className="text-xl font-mono rounded-lg">
-                Our projects
-              </button>
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact">
-              <button className="text-xl font-mono rounded-lg">Contact</button>
-            </Link>
-          </li>
+          {Links.map((link) => {
+            return (
+              <li key={link.linkname}>
+                <Link href={link.linkref}>
+                  <button className="text-xl font-mono rounded-lg">
+                    {link.linkname}
+                  </button>
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>

@@ -13,8 +13,8 @@ import Navbar from "../components/NavBar";
 
 const Main = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen ">
-      <h1 className="text-7xl tracking-widest font-mono font-bold text-primary ml-3 ">
+    <div className="flex flex-col items-center justify-center h-screen">
+      <h1 className="text-7xl tracking-widest font-mono font-bold text-primary ml-3">
         PROJECT
       </h1>
       <h1 className="text-7xl tracking-widest font-mono font-bold text-primary -ml-10">
@@ -24,7 +24,7 @@ const Main = () => {
       <div className="flex flex-row ">
         <div>
           <div className="flex flex-row text-5xl tracking-wider font-mono font-bold ">
-            <h1 className="text-5xl tracking-wider font-mono font-bold ">
+            <h1 className="text-5xl tracking-wider font-mono font-bold">
               Coming
             </h1>
             <h1 className="text-primary ml-4">S</h1>
@@ -49,7 +49,7 @@ const Showcase = () => {
         <TwoWrapper />
       </div>
       <div className="h-screen flex flex-row justify-center items-center z-1">
-        <div className=" h-1/2 w-1/2  relative  ">
+        <div className="h-1/2 w-1/2 relative ">
           <Image fill objectFit="cover" src="/logopc4.png" />
         </div>
       </div>
