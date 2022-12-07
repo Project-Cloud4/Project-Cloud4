@@ -5,28 +5,28 @@ function Footer() {
     {
       username: "Murariu Georgiana-Roxana",
       ig: "@georgiamurariu",
-      iglink: "https://www.instagram.com/molecule_sain/?next=%2F",
+      iglink: "https://www.instagram.com/georgiamurariu/",
       phone: "0758146962",
       mail: "georgiamurariu@gmail.com",
     },
     {
       username: "Sainenco Luchian",
       ig: "@molecule_sain",
-      iglink: "https://www.instagram.com/molecule_sain/?next=%2F",
+      iglink: "https://www.instagram.com/molecule_sain/",
       phone: "0741649955",
       mail: "lucasainenco2@gmail.com",
     },
     {
       username: "Vranciu Andra",
       ig: "@andravranciu",
-      iglink: "https://www.instagram.com/andravranciu/?next=%2F",
+      iglink: "https://www.instagram.com/andravranciu/",
       phone: "0754294368",
-      mail: "georgiamurariu@gmail.com",
+      mail: "a.vranciu@yahoo.com",
     },
     {
       username: "Zgîmbău Tudor",
       ig: "@tudor_codes",
-      iglink: "https://www.instagram.com/tudor_codes/?next=%2F",
+      iglink: "https://www.instagram.com/tudor_codes/",
       phone: "0751790642",
       mail: "tudor.zgimbau@gmail.com",
     },
@@ -35,7 +35,7 @@ function Footer() {
   return (
     <footer className="footer p-10 bg-base-100 text-neutral-content">
       {members.map((member) => (
-        <Member member={member}></Member>
+        <Member key={member.ig} member={member}></Member>
       ))}
     </footer>
   );
@@ -43,7 +43,7 @@ function Footer() {
 
 function Member({ member }) {
   return (
-    <>
+    <div>
       <span className="footer-title">{member.username}</span>
       <a href={member.iglink} className="link link-hover">
         Instagram: {member.ig}
@@ -52,7 +52,7 @@ function Member({ member }) {
         Phone number : {member.phone}
       </a>
       <a className="link link-hover">Email: {member.mail} </a>
-    </>
+    </div>
   );
 }
 
