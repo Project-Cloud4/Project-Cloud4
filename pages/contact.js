@@ -21,7 +21,7 @@ function Footer() {
       ig: "@andravranciu",
       iglink: "https://www.instagram.com/andravranciu/",
       phone: "0754294368",
-      mail: " a.vranciu@yahoo.com",
+      mail: "a.vranciu@yahoo.com",
     },
     {
       username: "Zgîmbău Tudor",
