@@ -7,8 +7,6 @@ import Image from "next/image";
 import Navbar from "../components/navbar";
 
 //to do: fix responsivness CRITICAL
-//add nextjs Link wrapper to Contact Button button
-//integrate navbar
 //make elements less *hardcoded*
 
 const Main = () => {

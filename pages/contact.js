@@ -51,7 +51,9 @@ function Member({ member }) {
       <a href={"tel:+4" + member.phone} className="link link-hover">
         Phone number : {member.phone}
       </a>
-      <a className="link link-hover">Email: {member.mail} </a>
+      <a href={"mailto:" + member.mail} className="link link-hover">
+        Email: {member.mail}
+      </a>
     </div>
   );
 }
@@ -69,6 +71,10 @@ function Contact() {
     {
       title: "GitHub: https://github.com/Project-Cloud4",
       link: "https://github.com/Project-Cloud4",
+    },
+    {
+      title: "Tiktok: @project_cloud4",
+      link: "https://www.tiktok.com/@project_cloud4",
     },
   ];
 
