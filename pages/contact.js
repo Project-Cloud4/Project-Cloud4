@@ -6,28 +6,24 @@ function Footer() {
       username: "Murariu Georgiana-Roxana",
       ig: "@georgiamurariu",
       iglink: "https://www.instagram.com/georgiamurariu/",
-      phone: "0758146962",
       mail: "georgiamurariu@gmail.com",
     },
     {
       username: "Sainenco Luchian",
       ig: "@molecule_sain",
       iglink: "https://www.instagram.com/molecule_sain/",
-      phone: "0741649955",
       mail: "lucasainenco2@gmail.com",
     },
     {
       username: "Vranciu Andra",
       ig: "@andravranciu",
       iglink: "https://www.instagram.com/andravranciu/",
-      phone: "0754294368",
       mail: "a.vranciu@yahoo.com",
     },
     {
       username: "Zgîmbău Tudor",
       ig: "@tudor_codes",
       iglink: "https://www.instagram.com/tudor_codes/",
-      phone: "0751790642",
       mail: "tudor.zgimbau@gmail.com",
     },
   ];
@@ -47,9 +43,6 @@ function Member({ member }) {
       <span className="footer-title">{member.username}</span>
       <a href={member.iglink} className="link link-hover">
         Instagram: {member.ig}
-      </a>
-      <a href={"tel:+4" + member.phone} className="link link-hover">
-        Phone number : {member.phone}
       </a>
       <a href={"mailto:" + member.mail} className="link link-hover">
         Email: {member.mail}
