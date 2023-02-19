@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen  w-screen bg-gradient-to-tr from-base-100 via-black to-black">
+    <div class="min-h-screen w-screen bg-gradient-to-tr from-base-100 via-black to-black overflow-x-hidden">
         <div class="z-20 h-full w-full flex pt-20 sm:pt-0 justify-start items-center flex-col sm:flex-row">
             <div class="basis-1/4 sm:basis-1/2 flex flex-col justify-center items-center">
                 <div class="h-1/2 w-1/2 flex justify-center items-center sm:items-start flex-col gap-4">
@@ -9,7 +9,7 @@
                     <h1 class="text-5xl sm:text-6xl lg:text-7xl tracking-widest font-mono font-bold text-accent ">
                         CLOUD4
                     </h1>
-                    <button class="btn btn-primary mt-1">Contact</button>
+                    <NuxtLink to="/contact"><button class="btn btn-primary mt-1">Contact</button></NuxtLink>
                 </div>
             </div>
             <div class="mt-10 sm:mt-0 basis-1/2 w-full h-full flex items-center justify-center relative">
@@ -21,24 +21,7 @@
                 </div>
 
             </div>
-
-
-
-
-
         </div>
-
-
-
-
-
-        <!-- <div class="absolute z-10" id="yeee">
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </div> -->
-
-
-
-
 
     </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
     <div
-        class=" min-h-screen  w-screen bg-gradient-to-tr from-base-100 to-black flex flex-col justify-center items-center pt-32 sm:pt-24">
+        class=" overflow-x-hidden min-h-screen h-max w-screen bg-gradient-to-tr from-base-100 via-black to-black flex flex-col justify-center items-center pt-32 sm:pt-24">
         <p class="text-6xl font-bold">Projects</p>
         <div
             class="flex-1 w-screen grid h-full grid-cols-1 gap-4 sm:gap-0 sm:grid-cols-3 grid-flow-row place-content-eevenly justify-items-center mt-10">
@@ -9,8 +9,8 @@
                 <div class="absolute h-full w-full z-20 flex flex-col p-4">
                     <div class="text-4xl w-full flex items-start font-bold">{{ project.title }}</div>
                     <!-- <div class="flex flex-col gap-1 max-w-[64]">
-                                                            <div :class="['badge mt-2 ' + badges[badge]]" v-for="badge in project.badges">{{ badge }}</div>
-                                                        </div> -->
+                                                                                                <div :class="['badge mt-2 ' + badges[badge]]" v-for="badge in project.badges">{{ badge }}</div>
+                                                                                            </div> -->
                     <div class="flex-1 flex items-end justify-end h-full">
                         <NuxtLink v-if="project.hasmd" :to="'/' + project.title.toLocaleLowerCase()">
                             <button class="btn btn-primary mr-2">More</button>

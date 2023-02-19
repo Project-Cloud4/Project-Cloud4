@@ -18,7 +18,7 @@
 
         </ul>
       </div>
-      <NuxtLink to="/" class="btn btn-ghost normal-case text-xl">Project Cloud4</NuxtLink>
+      <a href="/" class="btn btn-ghost normal-case text-xl">Project Cloud4</a>
     </div>
     <div class="navbar-end hidden lg:flex">
       <ul class="menu menu-horizontal px-1">

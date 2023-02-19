@@ -1,5 +1,6 @@
 <template>
-    <div class="min-h-screen  w-screen bg-gradient-to-tr from-base-100 to-black flex flex-col items-center">
+    <div
+        class="min-h-screen h-max w-screen bg-gradient-to-tr from-base-100 via-black to-black flex flex-col items-center overflow-x-hidden">
         <div class="text-6xl font-bold pt-24">
             Contact
         </div>
@@ -12,9 +13,9 @@
                         <img class="hidden sm:block h-64" src="/logopc4.png" />
                         <div class="h-64 w-full flex flex-col justify-center">
                             <p class="flex flex-col sm:flex-row gap-0 sm:gap-2 w-max" v-for="contact in contactInfo">
-                            <p class="text-lg  sm:text-xl  font-semibold">> {{ contact.what }}</p>
-                            <a class="text-lg  sm:text-xl font-semibold rounded-lg hover:text-primary" :href="contact.link"
-                                target="_blank">
+                            <p class="text-base  sm:text-xl  font-semibold">> {{ contact.what }}</p>
+                            <a class="text-base  sm:text-xl font-semibold rounded-lg hover:text-primary"
+                                :href="contact.link" target="_blank">
                                 {{ contact.title }}
                             </a>
                             </p>
