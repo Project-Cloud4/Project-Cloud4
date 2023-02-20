@@ -45,20 +45,12 @@ export default
             return {
                 projects: [
                     {
-                        title: "Moonlight",
-                        image: "/eminescu.png",
-                        button: "Link",
-                        linkk: "https://eminescu.netlify.app",
-                        badges: ["map", "stem"],
-                        hasmd: false,
-                    },
-                    {
                         title: "Equanimity",
                         image: "/samsung.png",
                         button: "development",
                         badges: ["stem", "development", "gamification"],
                         linkk: "https://sam-eq.netlify.app",
-                        hasmd: false,
+                        hasmd: true,
                     },
                     {
                         title: "ATRIS",
