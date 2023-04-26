@@ -12,9 +12,9 @@
                         <NuxtLink :to="'/' + project.title.toLocaleLowerCase()">
                             <button class="btn btn-primary mr-2">More</button>
                         </NuxtLink>
-                        <a v-if="project.button !== 'development'" :href="project.link">
+                        <a v-if="project.state !== 'development'" :href="project.link">
                             <button class="btn btn-primary">{{
-                                project.button
+                                project.state
                             }}</button>
                         </a>
                         <div v-else>
@@ -38,15 +38,15 @@ export default
             return {
                 projects: [
                     {
-                        title: "Equanimity",
-                        image: "/samsung.png",
-                        button: "development",
-                        link: "https://sam-eq.netlify.app",
+                        title: "Website",
+                        image: "/logopc4.png",
+                        link: "https://www.projectcloud4.com/",
+                        state: "public"
                     },
                     {
                         title: "ATRIS",
-                        image: "/atris.png",
-                        button: "development",
+                        image: "/atris.jpeg",
+                        state: "development",
                         link: "",
                     }
                 ],
